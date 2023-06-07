@@ -264,13 +264,10 @@ textarea{
   
   
 /* Style class ---------------------------------------------------------------- */
-.brand-text-large, .brand-text-short{
+.brand-text-large{
     font-weight: 700;
 }
 
-.brand-text-large{
-    display: none;
-}
 
 /* .input-container p{
     margin: 5px;
@@ -355,9 +352,7 @@ textarea{
         margin: 0 auto; 
     }
 
-    .brand-text-short{
-        display: none;
-    }
+  
 
     .brand-text-large{
         display: block;
@@ -390,7 +385,7 @@ textarea{
       }
     
     header{
-        padding: 40px;
+        padding: 20px;
     
     }
      .input-container{
