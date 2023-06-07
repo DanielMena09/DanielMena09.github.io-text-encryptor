@@ -387,25 +387,7 @@ textarea{
         background-position: center;
       }
     
-    header {
-  display: flex;
-}
-   
 
-    
-
-    .display-container {
-        width: 100%;
-       
-    }
-
-    .display-container button{
-        width: 30%;
-        margin-top: 100px;
-        margin-bottom: 20px;
-    }
-
-}
 
     
 
