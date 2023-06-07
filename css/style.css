@@ -36,11 +36,7 @@ header, footer{
     padding: 5px 5px;
 }
 
-header{
-    
-    padding: 10px;
-    
-}
+
 
 footer{
     display: flex;
@@ -392,6 +388,27 @@ textarea{
         background-size: cover;
         background-position: center;
       }
+    
+    header{
+        padding: 40px;
+    
+    }
+     .input-container{
+        margin-top: 30px;
+    }
+
+    .display-container {
+        width: 100%;
+       
+    }
+
+    .display-container button{
+        width: 30%;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    
+}
     
 
 
