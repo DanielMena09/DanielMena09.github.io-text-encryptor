@@ -479,9 +479,13 @@ textarea{
     }
 
     .btn-copy{
-      margin-top: auto;
-      margin-bottom: 25px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 20px;
     }
+
 
     ::placeholder{
         font-weight: 600;
