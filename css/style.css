@@ -1,0 +1,513 @@
+/* Elements HTML class -------------------------------------------------------- */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.144),rgba(0, 0, 0, 0.623)), url(../images/fondo-ligths.jpg);
+    background-size: cover;
+}
+
+main{
+    width: 95%;
+    margin: 10px auto;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header, footer{
+    text-transform: uppercase;
+    color: #aae5ff;
+    width: 100%;
+    background-color: #286c837a;
+    padding: 5px 5px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: auto;
+}
+
+textarea{
+    color: #ffffff;
+   
+}
+
+.input-container{
+    border-radius: 24px;
+    background-color: rgba(55, 43, 126, 0.5); 
+}
+
+
+/* Configuration class -------------------------------------------------------- */
+.btn-blue{
+
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    color: #011f33;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 10px 5px 20px #050505e5;
+    text-transform: uppercase;
+    background-size: 200% auto;
+             
+ 
+  }
+  
+
+
+  .btn.pulse-effect {
+    animation: pulse-shadow 1s;
+    transform: scale(1.1);
+  }
+  
+  @keyframes pulse-shadow {
+    0% {
+      box-shadow: 0 0 0 0 rgba(38, 208, 206.63);
+    }
+    70% {
+      box-shadow: 0 0 0 20px rgba(0, 123, 255, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+    }
+  }
+
+.btn-grey{
+    background-image: linear-gradient(to right, #1a29809d 0%, #26D0CE  51%, #1A2980  100%);
+    color: #011f33;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 10px 5px 20px #050505e5;
+    text-transform: uppercase;
+    background-size: 200% auto;
+}
+
+
+
+#advertencia{
+    color: #91a1ff;
+    text-shadow: #0A3871;
+}
+
+.icon-16{
+    width: 16px;
+    
+}
+
+.icon-32{
+    width: 32px;
+    margin: 0 20px
+}
+
+.display-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px auto;
+    position: relative; /* Agrega esta línea para establecer una posición relativa */
+  }
+  
+  .display-container .area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Agrega esta línea para establecer un índice z negativo y colocar el efecto detrás del contenido */
+  }
+  
+  .area {
+    background: #4e54c800;
+    width: 100%;
+    height: 100vh;
+    border-radius: 24px;
+  }
+  
+  .circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff4d;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+  }
+  
+  .circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+    background-color: #9b05ff;
+  }
+  
+  .circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+    background-color: #26D0CE;
+  }
+  
+  .circles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+    background-color: #f691ffcc;
+  }
+
+  
+  .circles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+    background-color: #18c59ac9;
+  }
+
+  
+  .circles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+    background-color: #2273ec;
+  }
+  
+  .circles li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+    background-color: #f700ff9f;
+  }
+  
+  .circles li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+    background-color: #008a94f1;
+  }
+  
+  .circles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+    background-color: #e2f576;
+  }
+  
+  .circles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+    background-color: #163846;
+  }
+  
+  .circles li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+    background-color: #22ec4e;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+    }
+    100% {
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+    }
+  }
+  
+  
+/* Style class ---------------------------------------------------------------- */
+.brand-text-large, .brand-text-short{
+    font-weight: 700;
+}
+
+.brand-text-large{
+    display: none;
+}
+
+/* .input-container p{
+    margin: 5px;
+} */
+
+.user-message{
+    width: 98%;
+    padding: 15px;
+    font-size: 24px;
+    resize: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.btn{
+    width: 80%;
+    max-width: 80%;
+    height: 50px;
+    margin: 10px auto;
+    padding: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: large;
+    border: 1px solid #0A3871;
+    border-radius: 30px;
+}
+
+.img-message{
+    display: none;
+}
+
+.container-btn-encrypt{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.display-container{
+    display: flex;
+    flex-direction: column;
+    color: cornsilk;
+    width: 80%;
+    margin: 10px auto;
+    background-image: linear-gradient(to bottom, rgba(14, 2, 85, 0.555), rgba(112, 154, 216, 0.726));
+    border-radius: 24px;
+    box-shadow: 5px 5px 20px #000000;
+
+}
+
+.display-container p, .input-container p{
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.empty-message1{
+    font-size: x-large;
+    font-weight: 700;
+}
+
+::placeholder{
+    font-weight: 500;
+    color: #ffffff9f;
+}
+
+#display-message{
+    width: 90%;
+    margin: 5px auto;
+    font-size: 24px;
+    word-break: break-all;
+    overflow-y: auto;
+}
+
+/* Media Querys --------------------------------------------------------------- */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    main{
+        width: 95%;
+        margin: 0 auto; 
+    }
+
+    .brand-text-short{
+        display: none;
+    }
+
+    .brand-text-large{
+        display: block;
+    }
+
+    .container-btn-encrypt{
+        flex-direction: row;
+    }
+
+    .container-btn-encrypt button{
+        margin: 10px;
+    }
+
+    .display-container {
+        width: 100%;
+    }
+
+    .display-container button{
+        width: 50%;
+    }
+}
+
+@media  (max-width: 768px){
+
+    body {
+        background-image: url("../images/fondo-ligths.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+   
+
+    .input-container{
+        margin-top: 30px;
+    }
+
+    .display-container {
+        width: 100%;
+       
+    }
+
+    .display-container button{
+        width: 30%;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+}
+
+    
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .social-media{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .i-attribute{
+        font-size:small;
+    }
+
+    #display-message{
+        font-size: 32px;
+    }
+
+    .user-message{
+        font-size: 32px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    main{
+        width: 90%;
+        height: 80vh;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: 10px 20px;
+    }
+
+    .input-container p{
+        margin-top: auto;
+        margin-bottom: 10px;
+    }
+
+    .container-btn-encrypt{
+        margin-top: auto;
+        margin-bottom: 10px;
+    }
+
+    .display-container{
+        width: 40%;
+        margin: 10px 20px;
+    }
+
+    .img-message{
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .btn-copy{
+      margin-top: auto;
+      margin-bottom: 25px;
+    }
+
+    ::placeholder{
+        font-weight: 600;
+        -webkit-text-stroke: 1px #000000;
+    }
+
+    textarea:focus::placeholder{
+        font-weight: 400;
+        color: #676C71;
+        -webkit-text-stroke: 0;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    main {
+        width: 80%; 
+    }
+
+    .input-container{
+        width: 70%;
+    }
+
+    .display-container{
+        width: 30%;
+    }
+}
+
+/* XX-large devices (xx-large desktops, 1440px and up) */
+@media (min-width: 1920px) {
+    main {
+        width: 70%; 
+    }
+
+}
